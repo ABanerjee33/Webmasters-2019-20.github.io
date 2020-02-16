@@ -159,7 +159,8 @@ function updateImages(){
     imageElements[i].src = imageString;
   }
   document.getElementById("Car-Picture").src=imageString;
-  sessionStorage.setItem("Car-Picture", imageString);
+  document.getElementById("Summary-Image").src=imageString;
+  //sessionStorage.setItem("Car-Picture", imageString);
 }
 
 updateImages();
