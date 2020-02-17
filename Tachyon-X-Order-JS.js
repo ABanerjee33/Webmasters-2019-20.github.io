@@ -154,21 +154,12 @@ function updateImages(){
   } else {
     imageString = "https://i.ibb.co/p2HsTw4/Tire2-White.png";
   }
-  //alert("The update images method is called");
-  window.addEventListener("load", function(event) {
-    var imageElements = document.getElementsByClassName("Car-picture");
-  });
-  //alert("Before images length");
-  //alert(imageElements.length);
-  for(var i = 0; i < imageElements.length; i++){
-    imageElements[i].src = imageString;
-  }
-  /*
+
   document.getElementById("Car-Picture").src=imageString;
   document.getElementById("Summary-Image").src=imageString;
+  document.getElementById("Advanced-Image").src=imageString;
   document.getElementById("Mobile-Exterior-Image").src=imageString;
-  */
-  //sessionStorage.setItem("Car-Picture", imageString);
+
 }
 
 updateImages();
