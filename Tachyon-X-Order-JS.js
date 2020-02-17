@@ -15,7 +15,6 @@ $('#To-Payment').on('click', function (evt) {
   evt.preventDefault();
 });
 
-
 var tabLinks = document.getElementById("Order-Tabs-Menu").children;
 var activeIndex = 0;
 function visited(linkEl){
@@ -156,9 +155,11 @@ function updateImages(){
     imageString = "https://i.ibb.co/p2HsTw4/Tire2-White.png";
   }
   //alert("The update images method is called");
-  var imageElements = document.getElementsByClassName("Car-picture");
-  alert("Before images length");
-  alert(imageElements.length);
+  window.addEventListener("load", function(event) {
+    var imageElements = document.getElementsByClassName("Car-picture");
+  });
+  //alert("Before images length");
+  //alert(imageElements.length);
   for(var i = 0; i < imageElements.length; i++){
     imageElements[i].src = imageString;
   }
