@@ -160,6 +160,7 @@ function updateImages(){
   }
   document.getElementById("Car-Picture").src=imageString;
   document.getElementById("Summary-Image").src=imageString;
+  document.getElementById("Mobile-Exterior").src=imageString;
   //sessionStorage.setItem("Car-Picture", imageString);
 }
 
