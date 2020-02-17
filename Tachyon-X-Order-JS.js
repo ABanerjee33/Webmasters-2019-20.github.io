@@ -137,7 +137,6 @@ optionsArrCopy = optionsArr.slice();
 optionsArr = optionsArr.concat(optionsArrCopy);
 
 //For tire / exterior combination
-var imageElements = document.getElementsByClassName("Car-picture");
 function updateImages(){
   var blackString = JSON.stringify(blackGloss);
   var whiteString = JSON.stringify(whiteGloss);
@@ -154,9 +153,6 @@ function updateImages(){
     imageString = "https://i.ibb.co/F0fC66t/Tire2-Black.png";
   } else {
     imageString = "https://i.ibb.co/p2HsTw4/Tire2-White.png";
-  }
-  for(var i = 0; i < imageElements.length; i++){
-    imageElements[i].src = imageString;
   }
   document.getElementById("Car-Picture").src=imageString;
   document.getElementById("Summary-Image").src=imageString;
