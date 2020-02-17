@@ -156,6 +156,7 @@ function updateImages(){
   }
   //alert("The update images method is called");
   var imageElements = document.getElementsByClassName("Car-picture");
+  alert("Before images length");
   alert(imageElements.length);
   for(var i = 0; i < imageElements.length; i++){
     imageElements[i].src = imageString;
