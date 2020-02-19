@@ -194,6 +194,13 @@ function summaryUpdate(){
     sumItem.children[0].textContent = allKeys[j];
     sumItem.children[1].textContent = f_Object.getName();
   }
+  var mobileSummaryDiv = document.getElementById("mobile-summary");
+  for(var j = 0; j < allKeys.length; j++){
+    var sumItem = mobileSummaryDiv.children[j];
+    var f_Object = Object.assign(new feature_object("", 0, "", true), JSON.parse(sessionStorage.getItem(allKeys[j])));
+    sumItem.children[0].textContent = allKeys[j];
+    sumItem.children[1].textContent = f_Object.getName();
+  }
 }
 
 summaryUpdate();
