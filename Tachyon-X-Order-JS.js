@@ -160,6 +160,7 @@ function updateImages(){
   document.getElementById("Advanced-Image").src=imageString;
   document.getElementById("Mobile-Exterior-Image").src=imageString;
   document.getElementById("mobile-advanced-image").src=imageString;
+  document.getElementById("mobile-summary-image").src=imageString;
 }
 
 updateImages();
