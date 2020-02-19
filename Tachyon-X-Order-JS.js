@@ -159,7 +159,7 @@ function updateImages(){
   document.getElementById("Summary-Image").src=imageString;
   document.getElementById("Advanced-Image").src=imageString;
   document.getElementById("Mobile-Exterior-Image").src=imageString;
-
+  document.getElementById("mobile-advanced-image").src=imageString;
 }
 
 updateImages();
