@@ -69,9 +69,6 @@ for(var i = 0; i < tabLinks.length; i++){
 }
 
 
-
-//Github comment
-
 //Class for each option in the option set
 
 class feature_object{
