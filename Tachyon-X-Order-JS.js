@@ -34,7 +34,6 @@ for(var i = 0; i < tabLinks.length; i++){
   tabLinks[i].onclick = function() {visited(this)};
 }
 
-//Github comment
 //Class for each option in the option set
 class feature_object{
     constructor(feature_name, feature_price, feature_group, state){
@@ -218,6 +217,10 @@ function assignFeature_Objects(buttonName){
         if((buttonEl.individual_object.getGroup() !== "Interior-Color") && (buttonEl.individual_object.getGroup() !== "Gloss") && (buttonEl.individual_object.getGroup() !== "Tires")){
         	buttonEl.children[0].textContent = buttonEl.individual_object.getName();
           buttonEl.children[1].textContent = buttonEl.individual_object.getPrice();
+        } else {
+          var description = document.getElementById(buttonEl.getGroup())
+          description.children[0].textContent = buttonEl.individual_object.getName();
+          description.children[1].textContent = buttonEl.individual_object.getPrice();
         }
         if(buttonEl.individual_object.getState()){
           buttonEl.classList.add("active");
