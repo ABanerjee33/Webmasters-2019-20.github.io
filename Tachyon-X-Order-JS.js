@@ -111,9 +111,6 @@ const vPerformance = new feature_object("V-Performance", 46000, "Car-Type", fals
 
 optionsArr.push(vPerformance);
 
-const longRange = new feature_object("Long Range", 43000, "Car-Type", false);
-
-optionsArr.push(longRange);
 
 
 
@@ -200,7 +197,6 @@ optionsArr.push(panel4);
 //ADVANCED TAB
 
 //Launch Control
-
 const trueLaunch = new feature_object("True Launch 360", 1000, "Launch", true);
 
 optionsArr.push(trueLaunch);
