@@ -431,6 +431,10 @@ function assignFeature_Objects(buttonName){
 
           buttonEl.children[1].textContent = buttonEl.individual_object.getPrice();
 
+        } else {
+          var roundDesc = document.getElementById("Interior-Color");
+          roundDesc.children[0] = buttonEl.individual_object.getName();
+          roundDesc.children[1] = buttonEl.individual_object.getPrice();
         }
 
         if(buttonEl.individual_object.getState()){
