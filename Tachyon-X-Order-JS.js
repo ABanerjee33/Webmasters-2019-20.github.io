@@ -438,7 +438,7 @@ function assignFeature_Objects(buttonName){
             roundDesc.children[0].textContent = buttonEl.individual_object.getName();
             roundDesc.children[1].textContent = buttonEl.individual_object.getPrice();
           }
-          
+
         }
 
         if(buttonEl.individual_object.getState()){
@@ -466,43 +466,34 @@ assignFeature_Objects("feature-button");
 function updateInfo(el) {
 
     var kids = document.getElementsByClassName('feature-button');
-
     var groupName = el.individual_object.getGroup();
-
     var group_filtered = [];
-
     for(var i = 0; i < kids.length; i++){
-
         if(kids[i].individual_object.getGroup() === groupName) {
-
           group_filtered.push(kids[i]);
-
         }
-
     }
 
     for(var i = 0; i < group_filtered.length; i++){
-
     		group_filtered[i].classList.remove("active");
-
         group_filtered[i].classList.add("inactive");
-
     }
 
 		el.classList.remove("inactive");
-
     el.classList.add("active");
 
+    if((el.individual_object.getGroup() === "Interior-Color") || (el.individual_object.getGroup() === "Gloss") || (el.individual_object.getGroup() === "Tires")){
+      var roundDesc = document.getElementById(el.individual_object.getGroup());
+      roundDesc.children[0].textContent = el.individual_object.getName();
+      roundDesc.children[1].textContent = el.individual_object.getPrice();
+    }
+
     let elementGroupString = el.individual_object.getGroup();
-
     let elementJSONString = JSON.stringify(el.individual_object);
-
     sessionStorage.setItem(elementGroupString, elementJSONString);
 
 		updatePrice("price-tracker");
-
     updateImages();
-
     summaryUpdate();
 
 }
