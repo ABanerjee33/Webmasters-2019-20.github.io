@@ -432,11 +432,13 @@ function assignFeature_Objects(buttonName){
           buttonEl.children[1].textContent = buttonEl.individual_object.getPrice();
 
         } else {
+
           if(buttonEl.individual_object.getState()){
             var roundDesc = document.getElementById(buttonEl.individual_object.getGroup());
             roundDesc.children[0].textContent = buttonEl.individual_object.getName();
             roundDesc.children[1].textContent = buttonEl.individual_object.getPrice();
           }
+          
         }
 
         if(buttonEl.individual_object.getState()){
