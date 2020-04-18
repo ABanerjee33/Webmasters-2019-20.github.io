@@ -103,11 +103,11 @@ var optionsArr = [];
 
 //Car type
 
-const rearWheelDrive = new feature_object("Rear Wheel Drive", 34000, "Car-Type", true);
+const rearWheelDrive = new feature_object("Long Range", 120000, "Car-Type", true);
 
 optionsArr.push(rearWheelDrive);
 
-const vPerformance = new feature_object("V-Performance", 46000, "Car-Type", false);
+const vPerformance = new feature_object("V-Performance", 150000, "Car-Type", false);
 
 optionsArr.push(vPerformance);
 
@@ -118,17 +118,17 @@ optionsArr.push(vPerformance);
 
 //Interior Color
 
-const blackInteriorColor = new feature_object("Black Interior", 2000, "Interior-Color", true);
+const blackInteriorColor = new feature_object("All Black", 0, "Interior-Color", true);
 
 optionsArr.push(blackInteriorColor);
 
-const whiteInteriorColor = new feature_object("White Interior", 1000, "Interior-Color", false);
+const whiteInteriorColor = new feature_object("Black & White", 1500, "Interior-Color", false);
 
 optionsArr.push(whiteInteriorColor)
 
 //Interior Material
 
-const leatherMaterial = new feature_object("Leather", 1000, "Material", true);
+const leatherMaterial = new feature_object("Leather", 0, "Material", true);
 
 optionsArr.push(leatherMaterial);
 
@@ -138,11 +138,11 @@ optionsArr.push(carbonFiberMaterial);
 
 //Interior Display
 
-const QLED_Display = new feature_object("24\" QLED 8K", 1000, "Display", true);
+const QLED_Display = new feature_object("12\" OLED 4K", 0, "Display", true);
 
 optionsArr.push(QLED_Display);
 
-const OLED_Display = new feature_object("12\" OLED 4K", 2000, "Display", false);
+const OLED_Display = new feature_object("24\" QLED 8K", 2000, "Display", false);
 
 optionsArr.push(OLED_Display);
 
@@ -152,17 +152,17 @@ optionsArr.push(OLED_Display);
 
 //Gloss
 
-const blackGloss = new feature_object("Black Gloss", 1000, "Gloss", true);
+const blackGloss = new feature_object("Jet Black", 0, "Gloss", true);
 
 optionsArr.push(blackGloss);
 
-const whiteGloss = new feature_object("White Gloss", 2000, "Gloss", false);
+const whiteGloss = new feature_object("Metallic Silver", 2000, "Gloss", false);
 
 optionsArr.push(whiteGloss);
 
 //Exoskeleton
 
-const titanium = new feature_object("Titanium Exoskeleton", 1000, "Exoskeleton", true);
+const titanium = new feature_object("Titanium Exoskeleton", 0, "Exoskeleton", true);
 
 optionsArr.push(titanium);
 
@@ -172,21 +172,21 @@ optionsArr.push(aluminum);
 
 //Tires
 
-const perfTires = new feature_object("Performance Tires", 1000, "Tires", true);
+const perfTires = new feature_object("Aero Wheels", 0, "Tires", true);
 
 optionsArr.push(perfTires);
 
-const standardTires = new feature_object("Standard Tires", 2000, "Tires", false);
+const standardTires = new feature_object("Sparko Wheels", 2000, "Tires", false);
 
 optionsArr.push(standardTires);
 
 //Solar Power
 
-const panel8 = new feature_object("8 Panel GigaCharge", 1000, "Solar", true);
+const panel8 = new feature_object("Focused LED", 0, "Solar", true);
 
 optionsArr.push(panel8);
 
-const panel4 = new feature_object("4 Panel Standard Charge", 2000, "Solar", false);
+const panel4 = new feature_object("Xenon Powered", 2000, "Solar", false);
 
 optionsArr.push(panel4);
 
@@ -197,31 +197,31 @@ optionsArr.push(panel4);
 //ADVANCED TAB
 
 //Launch Control
-const trueLaunch = new feature_object("True Launch 360", 1000, "Launch", true);
+const trueLaunch = new feature_object("True Launch 360", 0, "Launch", true);
 
 optionsArr.push(trueLaunch);
 
-const standardLaunch = new feature_object("Standard Launch", 2000, "Launch", false);
+const standardLaunch = new feature_object("Precision Launch 360", 2000, "Launch", false);
 
 optionsArr.push(standardLaunch);
 
 //Blindspot Detection
 
-const retinaBlindspot = new feature_object("Retina", 1000, "Blindspot", true);
+const retinaBlindspot = new feature_object("Retina View", 0, "Blindspot", true);
 
 optionsArr.push(retinaBlindspot);
 
-const standardBlindspot = new feature_object("Standard", 2000, "Blindspot", false);
+const standardBlindspot = new feature_object("Aperture View", 2000, "Blindspot", false);
 
 optionsArr.push(standardBlindspot);
 
 //Regenerative Braking
 
-const fuelEnhance = new feature_object("Fuel Enhance", 1000, "Regenerative", true);
+const fuelEnhance = new feature_object("Fuel Enhance", 0, "Regenerative", true);
 
 optionsArr.push(fuelEnhance);
 
-const standardRegen = new feature_object("Standard", 2000, "Regenerative", false);
+const standardRegen = new feature_object("Apex Fuel Enhance", 2000, "Regenerative", false);
 
 optionsArr.push(standardRegen);
 
