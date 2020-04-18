@@ -429,8 +429,7 @@ function assignFeature_Objects(buttonName){
 
         	buttonEl.children[0].textContent = buttonEl.individual_object.getName();
           if(buttonEl.individual_object.getPrice() === 0){
-            buttonEl.children[1].style.setProperty(content, "Included", important);
-            //buttonEl.children[1].textContent = "Included";
+            buttonEl.children[1].textContent = "Included";
           } else {
             buttonEl.children[1].textContent = buttonEl.individual_object.getPrice();
           }
@@ -443,8 +442,7 @@ function assignFeature_Objects(buttonName){
             if(buttonEl.individual_object.getPrice() === 0){
               roundDesc.children[1].textContent = "Included";
             } else {
-              roundDesc.children[1].style.setProperty(content, "Included", important);
-              //roundDesc.children[1].textContent = buttonEl.individual_object.getPrice();
+              roundDesc.children[1].textContent = buttonEl.individual_object.getPrice();
             }
           }
 
