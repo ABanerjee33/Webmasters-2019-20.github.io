@@ -438,6 +438,7 @@ function assignFeature_Objects(buttonName){
 
           if(buttonEl.individual_object.getState()){
             var roundDescs = document.getElementsByClassName(buttonEl.individual_object.getGroup());
+            alert(buttonEl.individual_object.getGroup() + " " + roundDescs.length);
             for(var k = 0; k < roundDescs.length; k++){
               roundDesc = roundDescs[k];
               roundDesc.children[0].textContent = buttonEl.individual_object.getName();
