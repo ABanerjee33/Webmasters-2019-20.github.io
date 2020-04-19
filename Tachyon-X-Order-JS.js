@@ -441,7 +441,7 @@ function assignFeature_Objects(buttonName){
             alert(buttonEl.individual_object.getGroup() + " " + roundDescs.length);
             alert(document.getElementsByClassName("Horizontal-Flex").length);
             for(var k = 0; k < roundDescs.length; k++){
-              roundDesc = roundDescs[k];
+              var roundDesc = roundDescs[k];
               roundDesc.children[0].textContent = buttonEl.individual_object.getName();
               if(buttonEl.individual_object.getPrice() === 0){
                 roundDesc.children[1].textContent = "Included";
@@ -497,7 +497,7 @@ function updateInfo(el) {
     if((el.individual_object.getGroup() === "Interior-Color") || (el.individual_object.getGroup() === "Color") || (el.individual_object.getGroup() === "Wheels")){
       var roundDescs = document.getElementsByClassName(el.individual_object.getGroup());
       for(var k = 0; k < roundDescs.length; k++){
-        roundDesc = roundDescs[k];
+        var roundDesc = roundDescs[k];
         roundDesc.children[0].textContent = el.individual_object.getName();
         if(el.individual_object.getPrice() === 0){
           roundDesc.children[1].textContent = "Included";
