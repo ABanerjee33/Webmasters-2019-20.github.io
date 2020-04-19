@@ -150,15 +150,15 @@ optionsArr.push(OLED_Display);
 
 //EXTERIOR TAB
 
-//Gloss
+//Color
 
-const blackGloss = new feature_object("Jet Black", 0, "Gloss", true);
+const blackColor = new feature_object("Jet Black", 0, "Color", true);
 
-optionsArr.push(blackGloss);
+optionsArr.push(blackColor);
 
-const whiteGloss = new feature_object("Metallic Silver", 2000, "Gloss", false);
+const whiteColor = new feature_object("Metallic Silver", 2000, "Color", false);
 
-optionsArr.push(whiteGloss);
+optionsArr.push(whiteColor);
 
 //Exoskeleton
 
@@ -170,15 +170,15 @@ const aluminum = new feature_object("Surgical Grade Aluminum", 2000, "Exoskeleto
 
 optionsArr.push(aluminum);
 
-//Tires
+//Wheels
 
-const perfTires = new feature_object("Aero Wheels", 0, "Tires", true);
+const perfWheels = new feature_object("Aero Wheels", 0, "Wheels", true);
 
-optionsArr.push(perfTires);
+optionsArr.push(perfWheels);
 
-const standardTires = new feature_object("Sparko Wheels", 2000, "Tires", false);
+const standardWheels = new feature_object("Sparko Wheels", 2000, "Wheels", false);
 
-optionsArr.push(standardTires);
+optionsArr.push(standardWheels);
 
 //Solar Power
 
@@ -243,11 +243,11 @@ sessionStorage.setItem("Display", JSON.stringify(QLED_Display));
 
 
 
-sessionStorage.setItem("Gloss", JSON.stringify(blackGloss));
+sessionStorage.setItem("Color", JSON.stringify(blackColor));
 
 sessionStorage.setItem("Exoskeleton", JSON.stringify(titanium));
 
-sessionStorage.setItem("Tires", JSON.stringify(perfTires));
+sessionStorage.setItem("Wheels", JSON.stringify(perfWheels));
 
 sessionStorage.setItem("Solar", JSON.stringify(panel8));
 
@@ -271,29 +271,29 @@ optionsArr = optionsArr.concat(optionsArrCopy);
 
 function updateImages(){
 
-  var blackString = JSON.stringify(blackGloss);
+  var blackString = JSON.stringify(blackColor);
 
-  var whiteString = JSON.stringify(whiteGloss);
+  var whiteString = JSON.stringify(whiteColor);
 
-  var tire1String = JSON.stringify(perfTires);
+  var tire1String = JSON.stringify(perfWheels);
 
-  var tire2String = JSON.stringify(standardTires);
+  var tire2String = JSON.stringify(standardWheels);
 
-  var currGloss = sessionStorage.getItem("Gloss");
+  var currColor = sessionStorage.getItem("Color");
 
-  var currTire = sessionStorage.getItem("Tires");
+  var currTire = sessionStorage.getItem("Wheels");
 
   var imageString = "";
 
-  if(currGloss === blackString && currTire === tire1String){
+  if(currColor === blackString && currTire === tire1String){
 
     imageString = "https://i.ibb.co/ZWQPhKw/Tire1-Black.png";
 
-  } else if(currGloss === whiteString && currTire === tire1String){
+  } else if(currColor === whiteString && currTire === tire1String){
 
     imageString = "https://i.ibb.co/fp7dypJ/Tire1-White.png";
 
-  } else if(currGloss === blackString && currTire === tire2String){
+  } else if(currColor === blackString && currTire === tire2String){
 
     imageString = "https://i.ibb.co/F0fC66t/Tire2-Black.png";
 
@@ -325,7 +325,7 @@ updateImages();
 
 
 
-const allKeys = ["Car-Type", "Interior-Color", "Material", "Display","Gloss", "Exoskeleton", "Tires", "Solar", "Launch", "Blindspot", "Regenerative"];
+const allKeys = ["Car-Type", "Interior-Color", "Material", "Display","Color", "Exoskeleton", "Wheels", "Solar", "Launch", "Blindspot", "Regenerative"];
 
 
 
@@ -425,7 +425,7 @@ function assignFeature_Objects(buttonName){
 
         buttonEl.setAttribute("onclick", "updateInfo(this)");
 
-        if((buttonEl.individual_object.getGroup() !== "Interior-Color") && (buttonEl.individual_object.getGroup() !== "Gloss") && (buttonEl.individual_object.getGroup() !== "Tires")){
+        if((buttonEl.individual_object.getGroup() !== "Interior-Color") && (buttonEl.individual_object.getGroup() !== "Color") && (buttonEl.individual_object.getGroup() !== "Wheels")){
 
         	buttonEl.children[0].textContent = buttonEl.individual_object.getName();
           if(buttonEl.individual_object.getPrice() === 0){
@@ -437,12 +437,15 @@ function assignFeature_Objects(buttonName){
         } else {
 
           if(buttonEl.individual_object.getState()){
-            var roundDesc = document.getElementById(buttonEl.individual_object.getGroup());
-            roundDesc.children[0].textContent = buttonEl.individual_object.getName();
-            if(buttonEl.individual_object.getPrice() === 0){
-              roundDesc.children[1].textContent = "Included";
-            } else {
-              roundDesc.children[1].textContent = buttonEl.individual_object.getPrice();
+            var roundDescs = document.getElementsByClassName(buttonEl.individual_object.getGroup());
+            for(var k = 0; k < roundDescs.length; k++){
+              roundDesc = roundDescs[k];
+              roundDesc.children[0].textContent = buttonEl.individual_object.getName();
+              if(buttonEl.individual_object.getPrice() === 0){
+                roundDesc.children[1].textContent = "Included";
+              } else {
+                roundDesc.children[1].textContent = buttonEl.individual_object.getPrice();
+              }
             }
           }
 
@@ -489,10 +492,19 @@ function updateInfo(el) {
 		el.classList.remove("inactive");
     el.classList.add("active");
 
-    if((el.individual_object.getGroup() === "Interior-Color") || (el.individual_object.getGroup() === "Gloss") || (el.individual_object.getGroup() === "Tires")){
-      var roundDesc = document.getElementById(el.individual_object.getGroup());
-      roundDesc.children[0].textContent = el.individual_object.getName();
-      roundDesc.children[1].textContent = el.individual_object.getPrice();
+    if((el.individual_object.getGroup() === "Interior-Color") || (el.individual_object.getGroup() === "Color") || (el.individual_object.getGroup() === "Wheels")){
+      var roundDescs = document.getElementsByClassName(el.individual_object.getGroup());
+      for(var k = 0; k < roundDescs.length; k++){
+        roundDesc = roundDescs[k];
+        roundDesc.children[0].textContent = el.individual_object.getName();
+        if(el.individual_object.getPrice() === 0){
+          roundDesc.children[1].textContent = "Included";
+        } else {
+          roundDesc.children[1].textContent = el.individual_object.getPrice();
+        }
+      }
+
+
     }
 
     let elementGroupString = el.individual_object.getGroup();
