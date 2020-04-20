@@ -471,7 +471,12 @@ document.addEventListener("DOMContentLoaded", function(){
   assignFeature_Objects("feature-button");
 });
 
-
+var allFeaturePrices = document.getElementsByClassName("feature-price");
+for(var k = 0; k < allFeaturePrices.length; k++){
+  if(allFeaturePrices[k].textContent !== "Included"){
+    allFeaturePrices[k].className += " cost";
+  }
+}
 //Update all information every time a button is clicked method
 
 function updateInfo(el) {
