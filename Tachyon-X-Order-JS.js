@@ -180,13 +180,13 @@ const standardWheels = new feature_object("Sparko Wheels", 2000, "Wheels", false
 
 optionsArr.push(standardWheels);
 
-//Solar Power
+//Lights Power
 
-const panel8 = new feature_object("Focused LED", 0, "Solar", true);
+const panel8 = new feature_object("Focused LED", 0, "Lights", true);
 
 optionsArr.push(panel8);
 
-const panel4 = new feature_object("Xenon Powered", 2000, "Solar", false);
+const panel4 = new feature_object("Xenon Powered", 2000, "Lights", false);
 
 optionsArr.push(panel4);
 
@@ -197,31 +197,31 @@ optionsArr.push(panel4);
 //ADVANCED TAB
 
 //Launch Control
-const trueLaunch = new feature_object("True Launch 360", 0, "Launch", true);
+const trueLaunch = new feature_object("True Launch 360", 0, "Launch-Control", true);
 
 optionsArr.push(trueLaunch);
 
-const standardLaunch = new feature_object("Precision Launch 360", 2000, "Launch", false);
+const standardLaunch = new feature_object("Precision Launch 360", 2000, "Launch-Control", false);
 
 optionsArr.push(standardLaunch);
 
 //Blindspot Detection
 
-const retinaBlindspot = new feature_object("Retina View", 0, "Blindspot", true);
+const retinaBlindspot = new feature_object("Retina View", 0, "Blindspot-Detection", true);
 
 optionsArr.push(retinaBlindspot);
 
-const standardBlindspot = new feature_object("Aperture View", 2000, "Blindspot", false);
+const standardBlindspot = new feature_object("Aperture View", 2000, "Blindspot-Detection", false);
 
 optionsArr.push(standardBlindspot);
 
 //Regenerative Braking
 
-const fuelEnhance = new feature_object("Fuel Enhance", 0, "Regenerative", true);
+const fuelEnhance = new feature_object("Fuel Enhance", 0, "Regenerative-Braking", true);
 
 optionsArr.push(fuelEnhance);
 
-const standardRegen = new feature_object("Apex Fuel Enhance", 2000, "Regenerative", false);
+const standardRegen = new feature_object("Apex Fuel Enhance", 2000, "Regenerative-Braking", false);
 
 optionsArr.push(standardRegen);
 
@@ -249,15 +249,15 @@ sessionStorage.setItem("Exoskeleton", JSON.stringify(titanium));
 
 sessionStorage.setItem("Wheels", JSON.stringify(perfWheels));
 
-sessionStorage.setItem("Solar", JSON.stringify(panel8));
+sessionStorage.setItem("Lights", JSON.stringify(panel8));
 
 
 
-sessionStorage.setItem("Launch", JSON.stringify(trueLaunch));
+sessionStorage.setItem("Launch-Control", JSON.stringify(trueLaunch));
 
-sessionStorage.setItem("Blindspot", JSON.stringify(retinaBlindspot));
+sessionStorage.setItem("Blindspot-Detection", JSON.stringify(retinaBlindspot));
 
-sessionStorage.setItem("Regenerative", JSON.stringify(fuelEnhance));
+sessionStorage.setItem("Regenerative-Braking", JSON.stringify(fuelEnhance));
 
 
 
@@ -325,7 +325,7 @@ updateImages();
 
 
 
-const allKeys = ["Car-Type", "Interior-Color", "Material", "Display","Color", "Exoskeleton", "Wheels", "Solar", "Launch", "Blindspot", "Regenerative"];
+const allKeys = ["Car-Type", "Interior-Color", "Material", "Display","Color", "Exoskeleton", "Wheels", "Lights", "Launch-Control", "Blindspot-Detection", "Regenerative-Braking"];
 
 
 
@@ -470,7 +470,7 @@ function updateAllDollarSigns(){
   for(var k = 0; k < allFeaturePrices.length; k++){
     if(allFeaturePrices[k].textContent !== "Included"){
       allFeaturePrices[k].classList.add("cost");
-    } 
+    }
   }
 }
 
