@@ -437,7 +437,7 @@ function assignFeature_Objects(buttonName){
         } else {
 
           if(buttonEl.individual_object.getState()){
-            var roundDescs = document.getElementsByClassName(buttonEl.individual_object.getGroup());
+            var roundDescs = document.getElementsByClassName(buttonEl.individual_object.getGroup().toLowerCase());
             alert(buttonEl.individual_object.getGroup() + " " + roundDescs.length);
             alert(document.getElementsByClassName("Horizontal-Flex").length);
             for(var k = 0; k < roundDescs.length; k++){
@@ -496,7 +496,7 @@ function updateInfo(el) {
     el.classList.add("active");
 
     if((el.individual_object.getGroup() === "Interior-Color") || (el.individual_object.getGroup() === "Color") || (el.individual_object.getGroup() === "Wheels")){
-      var roundDescs = document.getElementsByClassName(el.individual_object.getGroup());
+      var roundDescs = document.getElementsByClassName(el.individual_object.getGroup().toLowerCase());
       for(var k = 0; k < roundDescs.length; k++){
         var roundDesc = roundDescs[k];
         roundDesc.children[0].textContent = el.individual_object.getName();
