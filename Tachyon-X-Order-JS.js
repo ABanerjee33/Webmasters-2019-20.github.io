@@ -470,6 +470,8 @@ function updateAllDollarSigns(){
   for(var k = 0; k < allFeaturePrices.length; k++){
     if(allFeaturePrices[k].textContent !== "Included"){
       allFeaturePrices[k].classList.add("cost");
+    } else {
+      allFeaturePrices[k].classList.remove("cost");
     }
   }
 }
