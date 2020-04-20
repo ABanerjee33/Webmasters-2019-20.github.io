@@ -469,15 +469,16 @@ function assignFeature_Objects(buttonName){
 
 document.addEventListener("DOMContentLoaded", function(){
   assignFeature_Objects("feature-button");
+  var allFeaturePrices = document.getElementsByClassName("feature-price");
+  for(var k = 0; k < allFeaturePrices.length; k++){
+    alert(allFeaturePrices[k].textContent);
+    if(allFeaturePrices[k].textContent !== "Included"){
+      allFeaturePrices[k].classList.add("cost");
+    }
+  }
 });
 
-var allFeaturePrices = document.getElementsByClassName("feature-price");
-for(var k = 0; k < allFeaturePrices.length; k++){
-  alert(allFeaturePrices[k].textContent);
-  if(allFeaturePrices[k].textContent !== "Included"){
-    allFeaturePrices[k].classList.add("cost");
-  }
-}
+
 //Update all information every time a button is clicked method
 
 function updateInfo(el) {
