@@ -468,8 +468,16 @@ function assignFeature_Objects(buttonName){
 function updateAllDollarSigns(){
   var allFeaturePrices = document.getElementsByClassName("feature-price");
   for(var k = 0; k < allFeaturePrices.length; k++){
-    if(allFeaturePrices[k].textContent !== "Included"){
-      allFeaturePrices[k].classList.toggle("cost");
+    if(allFeaturePrices[k].parentNode.classList.contains("horizontal-flex")){
+      if(allFeaturePrices[k].textContent !== "Included"){
+        allFeaturePrices[k].classList.add("cost");
+      } else {
+        allFeaturePrices[k].classList.remove("cost");
+      }
+    } else {
+      if(allFeaturePrices[k].textContent !== "Included"){
+        allFeaturePrices[k].classList.add("cost");
+      }
     }
   }
 }
