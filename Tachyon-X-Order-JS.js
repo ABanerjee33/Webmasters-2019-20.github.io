@@ -511,7 +511,6 @@ function updateInfo(el) {
         } else {
           roundDesc.children[1].textContent = el.individual_object.getPrice();
         }
-        updateAllDollarSigns();
       }
     }
 
