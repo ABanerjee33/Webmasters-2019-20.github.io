@@ -508,6 +508,7 @@ function updateInfo(el) {
         roundDesc.children[0].textContent = el.individual_object.getName();
         if(el.individual_object.getPrice() === 0){
           roundDesc.children[1].textContent = "Included";
+          updateAllDollarSigns();
         } else {
           roundDesc.children[1].textContent = el.individual_object.getPrice();
         }
