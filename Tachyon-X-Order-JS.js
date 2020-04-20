@@ -473,6 +473,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 var allFeaturePrices = document.getElementsByClassName("feature-price");
 for(var k = 0; k < allFeaturePrices.length; k++){
+  alert(allFeaturePrices[k].textContent);
   if(allFeaturePrices[k].textContent !== "Included"){
     allFeaturePrices[k].classList.add("cost");
   }
