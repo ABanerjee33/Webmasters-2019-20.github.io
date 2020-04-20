@@ -469,8 +469,9 @@ function assignFeature_Objects(buttonName){
 
 
 
-assignFeature_Objects("feature-button");
-
+document.addEventListener("DOMContentLoaded", function(){
+  assignFeature_Objects("feature-button");
+});
 
 
 //Update all information every time a button is clicked method
