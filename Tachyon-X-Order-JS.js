@@ -471,7 +471,7 @@ function updateAllDollarSigns(){
     if(allFeaturePrices[k].textContent !== "Included"){
       allFeaturePrices[k].classList.add("cost");
     } else {
-      allFeaturePrices[k].classList.remove("cost");
+      allFeaturePrices[k].classList.toggle("cost");
     }
   }
 }
