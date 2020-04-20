@@ -469,7 +469,7 @@ function updateAllDollarSigns(){
   var allFeaturePrices = document.getElementsByClassName("feature-price");
   for(var k = 0; k < allFeaturePrices.length; k++){
     if(allFeaturePrices[k].textContent !== "Included"){
-      allFeaturePrices[k].classList.add("cost");
+      allFeaturePrices[k].classList.toggle("cost");
     }
   }
 }
@@ -511,7 +511,6 @@ function updateInfo(el) {
         } else {
           roundDesc.children[1].textContent = el.individual_object.getPrice();
         }
-        updateAllDollarSigns();
       }
     }
 
