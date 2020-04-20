@@ -465,17 +465,18 @@ function assignFeature_Objects(buttonName){
 
 }
 
-
-
-document.addEventListener("DOMContentLoaded", function(){
-  assignFeature_Objects("feature-button");
+function updateAllDollarSigns(){
   var allFeaturePrices = document.getElementsByClassName("feature-price");
   for(var k = 0; k < allFeaturePrices.length; k++){
-    alert(allFeaturePrices[k].textContent);
     if(allFeaturePrices[k].textContent !== "Included"){
       allFeaturePrices[k].classList.add("cost");
     }
   }
+}
+
+document.addEventListener("DOMContentLoaded", function(){
+  assignFeature_Objects("feature-button");
+  updateAllDollarSigns();
 });
 
 
@@ -511,8 +512,6 @@ function updateInfo(el) {
           roundDesc.children[1].textContent = el.individual_object.getPrice();
         }
       }
-
-
     }
 
     let elementGroupString = el.individual_object.getGroup();
@@ -520,6 +519,7 @@ function updateInfo(el) {
     sessionStorage.setItem(elementGroupString, elementJSONString);
 
 		updatePrice("price-tracker");
+    updateAllDollarSigns();
     updateImages();
     summaryUpdate();
 
