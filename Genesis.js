@@ -103,11 +103,11 @@ var optionsArr = [];
 
 //Car type
 
-const rearWheelDrive = new feature_object("Long Range", 120000, "Car-Type", true);
+const rearWheelDrive = new feature_object("Long Range", 51000, "Car-Type", true);
 
 optionsArr.push(rearWheelDrive);
 
-const vPerformance = new feature_object("V-Performance", 150000, "Car-Type", false);
+const vPerformance = new feature_object("V-Performance", 68000, "Car-Type", false);
 
 optionsArr.push(vPerformance);
 
@@ -118,11 +118,11 @@ optionsArr.push(vPerformance);
 
 //Interior Color
 
-const blackInteriorColor = new feature_object("All Black", 0, "Interior-Color", true);
+const blackInteriorColor = new feature_object("All White", 0, "Interior-Color", true);
 
 optionsArr.push(blackInteriorColor);
 
-const whiteInteriorColor = new feature_object("Black & White", 1500, "Interior-Color", false);
+const whiteInteriorColor = new feature_object("Golden Maroon", 2500, "Interior-Color", false);
 
 optionsArr.push(whiteInteriorColor)
 
@@ -152,11 +152,11 @@ optionsArr.push(OLED_Display);
 
 //Color
 
-const blackColor = new feature_object("Jet Black", 0, "Color", true);
+const blackColor = new feature_object("Army Green", 0, "Color", true);
 
 optionsArr.push(blackColor);
 
-const whiteColor = new feature_object("Metallic Silver", 2000, "Color", false);
+const whiteColor = new feature_object("Golden Copper", 3000, "Color", false);
 
 optionsArr.push(whiteColor);
 
