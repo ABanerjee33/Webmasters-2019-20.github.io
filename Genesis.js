@@ -152,7 +152,7 @@ optionsArr.push(OLED_Display);
 
 //Color
 
-const blackColor = new feature_object("Army Green", 0, "Color", true);
+const blackColor = new feature_object("Silver Grey", 0, "Color", true);
 
 optionsArr.push(blackColor);
 
