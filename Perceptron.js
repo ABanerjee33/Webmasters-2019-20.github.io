@@ -142,7 +142,7 @@ const QLED_Display = new feature_object("12\" OLED 4K", 0, "Display", true);
 
 optionsArr.push(QLED_Display);
 
-const OLED_Display = new feature_object("24\" QLED 8K", 2000, "Display", false);
+const OLED_Display = new feature_object("12\" QLED 8K", 2000, "Display", false);
 
 optionsArr.push(OLED_Display);
 
