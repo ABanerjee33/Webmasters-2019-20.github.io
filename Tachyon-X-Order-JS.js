@@ -287,19 +287,19 @@ function updateImages(){
 
   if(currColor === blackString && currTire === tire1String){
 
-    imageString = "https://i.ibb.co/F6n8rF3/Black-Car.jpg";
+    imageString = "https://i.ibb.co/YWFM7V4/Black-Car.png";
 
   } else if(currColor === whiteString && currTire === tire1String){
 
-    imageString = "https://i.ibb.co/Qkz6cp0/hd-sideview.jpg";
+    imageString = "https://i.ibb.co/ZVn4PY3/hd-sideview.jpg";
 
   } else if(currColor === blackString && currTire === tire2String){
 
-    imageString = "https://i.ibb.co/F0fC66t/Tire2-Black.png";
+    imageString = "https://i.ibb.co/YR7HS8k/Black-Car-Sparko.png";
 
   } else {
 
-    imageString = "https://i.ibb.co/p2HsTw4/Tire2-White.png";
+    imageString = "https://i.ibb.co/Qkz6cp0/hd-sideview.jpg";
 
   }
 
