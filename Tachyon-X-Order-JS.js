@@ -291,7 +291,7 @@ function updateImages(){
 
   } else if(currColor === whiteString && currTire === tire1String){
 
-    imageString = "https://i.ibb.co/fp7dypJ/Tire1-White.png";
+    imageString = "https://i.ibb.co/Qkz6cp0/hd-sideview.jpg";
 
   } else if(currColor === blackString && currTire === tire2String){
 
