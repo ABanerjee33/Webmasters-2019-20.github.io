@@ -30,7 +30,7 @@ $('#To-Payment').on('click', function (evt) {
 
 });
 
-
+//Sigma JS
 
 var tabLinks = document.getElementById("Order-Tabs-Menu").children;
 
