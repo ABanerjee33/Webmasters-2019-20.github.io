@@ -287,7 +287,7 @@ function updateImages(){
 
   if(currColor === blackString && currTire === tire1String){
 
-    imageString = "https://i.ibb.co/ZWQPhKw/Tire1-Black.png";
+    imageString = "https://i.ibb.co/F6n8rF3/Black-Car.jpg";
 
   } else if(currColor === whiteString && currTire === tire1String){
 
