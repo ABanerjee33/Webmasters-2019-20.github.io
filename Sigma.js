@@ -287,19 +287,19 @@ function updateImages(){
 
   if(currColor === blackString && currTire === tire1String){
 
-    imageString = "https://i.ibb.co/ZWQPhKw/Tire1-Black.png";
+    imageString = "https://i.ibb.co/VJc08vv/Sigma-Midnight-Blue-Aero.png";
 
   } else if(currColor === whiteString && currTire === tire1String){
 
-    imageString = "https://i.ibb.co/fp7dypJ/Tire1-White.png";
+    imageString = "https://i.ibb.co/gm3B6MP/Sigma-Copper-Aero.jpg";
 
   } else if(currColor === blackString && currTire === tire2String){
 
-    imageString = "https://i.ibb.co/F0fC66t/Tire2-Black.png";
+    imageString = "https://i.ibb.co/K56hXcy/Sigma-Midnight-Blue-Vortex.png";
 
   } else {
 
-    imageString = "https://i.ibb.co/p2HsTw4/Tire2-White.png";
+    imageString = "https://i.ibb.co/PmWNXsT/Sigma-Copper-Vortex.jpg";
 
   }
 
