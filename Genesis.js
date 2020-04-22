@@ -287,19 +287,19 @@ function updateImages(){
 
   if(currColor === blackString && currTire === tire1String){
 
-    imageString = "https://i.ibb.co/ZWQPhKw/Tire1-Black.png";
+    imageString = "https://i.ibb.co/nBs8Znm/Genesis-Silver-Aero.jpg";
 
   } else if(currColor === whiteString && currTire === tire1String){
 
-    imageString = "https://i.ibb.co/fp7dypJ/Tire1-White.png";
+    imageString = "https://i.ibb.co/JHjm3s9/Genesis-Golden-Aero.jpg";
 
   } else if(currColor === blackString && currTire === tire2String){
 
-    imageString = "https://i.ibb.co/F0fC66t/Tire2-Black.png";
+    imageString = "https://i.ibb.co/F4bVVSX/Genesis-Silver-Falcon.jpg";
 
   } else {
 
-    imageString = "https://i.ibb.co/p2HsTw4/Tire2-White.png";
+    imageString = "https://i.ibb.co/b3My1P3/Genesis-Golden-Falcon.jpg";
 
   }
 
