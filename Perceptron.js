@@ -118,11 +118,11 @@ optionsArr.push(vPerformance);
 
 //Interior Color
 
-const blackInteriorColor = new feature_object("All Black", 0, "Interior-Color", true);
+const blackInteriorColor = new feature_object("All White", 0, "Interior-Color", true);
 
 optionsArr.push(blackInteriorColor);
 
-const whiteInteriorColor = new feature_object("Black & White", 1500, "Interior-Color", false);
+const whiteInteriorColor = new feature_object("Emerald Green", 1500, "Interior-Color", false);
 
 optionsArr.push(whiteInteriorColor)
 
@@ -152,11 +152,11 @@ optionsArr.push(OLED_Display);
 
 //Color
 
-const blackColor = new feature_object("Jet Black", 0, "Color", true);
+const blackColor = new feature_object("Midnight Grey", 0, "Color", true);
 
 optionsArr.push(blackColor);
 
-const whiteColor = new feature_object("Metallic Silver", 2000, "Color", false);
+const whiteColor = new feature_object("Pearl White", 2000, "Color", false);
 
 optionsArr.push(whiteColor);
 
@@ -176,7 +176,7 @@ const perfWheels = new feature_object("Aero Wheels", 0, "Wheels", true);
 
 optionsArr.push(perfWheels);
 
-const standardWheels = new feature_object("Sparko Wheels", 2000, "Wheels", false);
+const standardWheels = new feature_object("Cyclone Wheels", 2000, "Wheels", false);
 
 optionsArr.push(standardWheels);
 
