@@ -103,11 +103,11 @@ var optionsArr = [];
 
 //Car type
 
-const rearWheelDrive = new feature_object("Long Range", 120000, "Car-Type", true);
+const rearWheelDrive = new feature_object("Long Range", 49000, "Car-Type", true);
 
 optionsArr.push(rearWheelDrive);
 
-const vPerformance = new feature_object("V-Performance", 150000, "Car-Type", false);
+const vPerformance = new feature_object("V-Performance", 65000, "Car-Type", false);
 
 optionsArr.push(vPerformance);
 
@@ -287,19 +287,19 @@ function updateImages(){
 
   if(currColor === blackString && currTire === tire1String){
 
-    imageString = "https://i.ibb.co/ZWQPhKw/Tire1-Black.png";
+    imageString = "https://i.ibb.co/5csybfC/Perceptron-Midnight-Grey-Aero.jpg";
 
   } else if(currColor === whiteString && currTire === tire1String){
 
-    imageString = "https://i.ibb.co/fp7dypJ/Tire1-White.png";
+    imageString = "https://i.ibb.co/6bDLbKx/Perceptron-Pearl-White-Aero.png";
 
   } else if(currColor === blackString && currTire === tire2String){
 
-    imageString = "https://i.ibb.co/F0fC66t/Tire2-Black.png";
+    imageString = "https://i.ibb.co/G23xPJM/Perceptron-Midnight-Grey-Cyclone.jpg";
 
   } else {
 
-    imageString = "https://i.ibb.co/p2HsTw4/Tire2-White.png";
+    imageString = "https://i.ibb.co/9WvtMvz/Perceptron-Pearl-White-Cyclone.png";
 
   }
 
