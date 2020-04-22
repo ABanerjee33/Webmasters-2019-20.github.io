@@ -197,11 +197,11 @@ optionsArr.push(panel4);
 //ADVANCED TAB
 
 //Launch Control
-const trueLaunch = new feature_object("True Launch 360", 0, "Launch-Control", true);
+const trueLaunch = new feature_object("Standard", 0, "Sunroof", true);
 
 optionsArr.push(trueLaunch);
 
-const standardLaunch = new feature_object("Precision Launch 360", 2000, "Launch-Control", false);
+const standardLaunch = new feature_object("Magic", 550, "Sunroof", false);
 
 optionsArr.push(standardLaunch);
 
@@ -253,7 +253,7 @@ sessionStorage.setItem("Lights", JSON.stringify(panel8));
 
 
 
-sessionStorage.setItem("Launch-Control", JSON.stringify(trueLaunch));
+sessionStorage.setItem("Sunroof", JSON.stringify(trueLaunch));
 
 sessionStorage.setItem("Blindspot-Detection", JSON.stringify(retinaBlindspot));
 
@@ -325,7 +325,7 @@ updateImages();
 
 
 
-const allKeys = ["Car-Type", "Interior-Color", "Material", "Display","Color", "Exoskeleton", "Wheels", "Lights", "Launch-Control", "Blindspot-Detection", "Regenerative-Braking"];
+const allKeys = ["Car-Type", "Interior-Color", "Material", "Display","Color", "Exoskeleton", "Wheels", "Lights", "Sunroof", "Blindspot-Detection", "Regenerative-Braking"];
 
 
 
