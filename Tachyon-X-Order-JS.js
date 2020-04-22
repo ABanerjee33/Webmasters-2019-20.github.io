@@ -295,11 +295,11 @@ function updateImages(){
 
   } else if(currColor === blackString && currTire === tire2String){
 
-    imageString = "https://i.ibb.co/YR7HS8k/Black-Car-Sparko.png";
+    imageString = "https://i.ibb.co/Bn6tD7B/Black-Car-Edited.png";
 
   } else {
 
-    imageString = "https://i.ibb.co/Qkz6cp0/hd-sideview.jpg";
+    imageString = "https://i.ibb.co/5KMH4q1/hd-sideview-edited.jpg";
 
   }
 
