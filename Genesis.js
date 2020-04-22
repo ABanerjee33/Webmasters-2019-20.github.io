@@ -176,7 +176,7 @@ const perfWheels = new feature_object("Aero Wheels", 0, "Wheels", true);
 
 optionsArr.push(perfWheels);
 
-const standardWheels = new feature_object("Sparko Wheels", 2000, "Wheels", false);
+const standardWheels = new feature_object("Falcon Wheels", 2000, "Wheels", false);
 
 optionsArr.push(standardWheels);
 

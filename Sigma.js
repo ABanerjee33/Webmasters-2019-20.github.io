@@ -103,11 +103,11 @@ var optionsArr = [];
 
 //Car type
 
-const rearWheelDrive = new feature_object("Long Range", 120000, "Car-Type", true);
+const rearWheelDrive = new feature_object("Long Range", 81000, "Car-Type", true);
 
 optionsArr.push(rearWheelDrive);
 
-const vPerformance = new feature_object("V-Performance", 150000, "Car-Type", false);
+const vPerformance = new feature_object("V-Performance", 95000, "Car-Type", false);
 
 optionsArr.push(vPerformance);
 
@@ -152,11 +152,11 @@ optionsArr.push(OLED_Display);
 
 //Color
 
-const blackColor = new feature_object("Jet Black", 0, "Color", true);
+const blackColor = new feature_object("Midnight Blue", 0, "Color", true);
 
 optionsArr.push(blackColor);
 
-const whiteColor = new feature_object("Metallic Silver", 2000, "Color", false);
+const whiteColor = new feature_object("Copper", 2000, "Color", false);
 
 optionsArr.push(whiteColor);
 
@@ -176,7 +176,7 @@ const perfWheels = new feature_object("Aero Wheels", 0, "Wheels", true);
 
 optionsArr.push(perfWheels);
 
-const standardWheels = new feature_object("Sparko Wheels", 2000, "Wheels", false);
+const standardWheels = new feature_object("Vortex Wheels", 2000, "Wheels", false);
 
 optionsArr.push(standardWheels);
 
